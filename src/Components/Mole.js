@@ -10,3 +10,5 @@ const Mole = (prop) => {
         return () => clearTimeout(timer)
     })
 }
+
+export default Mole
