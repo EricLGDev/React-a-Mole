@@ -19,3 +19,5 @@ const moleContainer = (props) => {
         </div>
     )
 }
+
+export default moleContainer
