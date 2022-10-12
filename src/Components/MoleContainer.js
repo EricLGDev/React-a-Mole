@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Mole from './Mole';
+import EmptySlot from "./EmptySlot";
 
 
 const moleContainer = (props) => {
@@ -10,4 +12,10 @@ const moleContainer = (props) => {
     }
 
     let displayMole = theMole ? <Mole setScore={props.setScore} toggle={setTheMole} handleClick={handleClick} /> : <EmptySlot toggle={setTheMole} />
+
+    return (
+        <div>
+            {displayMole}
+        </div>
+    )
 }
