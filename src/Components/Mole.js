@@ -9,6 +9,12 @@ const Mole = (prop) => {
         }, randomSeconds)
         return () => clearTimeout(timer)
     })
+
+    return (
+        <div>
+            <img style={{'width': '20vh'}} src={moleImage} onClick={props.handleClick} />
+        </div>
+    )
 }
 
 export default Mole
