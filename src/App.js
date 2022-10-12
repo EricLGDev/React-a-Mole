@@ -15,7 +15,14 @@ function App() {
       </div>
     )
   }
-  
+
+  return (
+    <div className="App">
+      <h1>React-A-Mole!</h1>
+      {score}
+      {createMoleHill()}
+    </div>
+  );
 }
 
 export default App;
