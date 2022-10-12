@@ -4,5 +4,10 @@ import { useState } from "react";
 const moleContainer = (props) => {
     let[theMole, setTheMole] = useState(false)
 
-    let displayMole = theMole ? <Mole toggle={setTheMole} handleClick={handleClick} /> : <EmptySlot toggle={setTheMole} />
+    const handleClick = (e) => {
+        props.setScore(props.score + 1)
+        setTheMole(false)
+    }
+
+    let displayMole = theMole ? <Mole setScore={props.setScore} toggle={setTheMole} handleClick={handleClick} /> : <EmptySlot toggle={setTheMole} />
 }
