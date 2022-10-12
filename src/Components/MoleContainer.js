@@ -3,7 +3,7 @@ import Mole from './Mole';
 import EmptySlot from "./EmptySlot";
 
 
-const moleContainer = (props) => {
+const MoleContainer = (props) => {
     let[theMole, setTheMole] = useState(false)
 
     const handleClick = (e) => {
@@ -20,4 +20,4 @@ const moleContainer = (props) => {
     )
 }
 
-export default moleContainer
+export default MoleContainer

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import moleImage from '../mole.png'
 
-const Mole = (prop) => {
+const Mole = (props) => {
     useEffect(() => {
         let randomSeconds = Math.ceil(Math.random() * 10000)
         let timer = setTimeout(() => {
