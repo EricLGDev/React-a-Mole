@@ -1,4 +1,16 @@
 .App {
+  background-color: #ba9;
+  display: flex;
   text-align: center;
+  flex-direction: column;
 }
+
+.gameBoard {
+  background-color: brown;
+  position: relative;
+}
+
+
+
+
 

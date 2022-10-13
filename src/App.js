@@ -19,9 +19,11 @@ function App() {
 
   return (
     <div className="App">
-      <h1>React-A-Mole!</h1>
-      {score}
-      {createMoleHill()}
+      <div className="gameBoard">
+        <h1>React-A-Mole!</h1>
+        {score}
+        {createMoleHill()}
+      </div>
     </div>
   );
 }
